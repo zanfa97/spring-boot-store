@@ -1,0 +1,32 @@
+{"properties": [
+  {
+    "name": "spring.jwt.secret",
+    "type": "java.lang.String",
+    "description": "Secret key used for signing JWT tokens."
+  },
+  {
+    "name": "spring.jwt.refreshTokenExpiration",
+    "type": "java.lang.String",
+    "description": "Expiration time for refresh tokens, in seconds."
+  },
+  {
+    "name": "spring.jwt.accessTokenExpiration",
+    "type": "java.lang.String",
+    "description": "Expiration time for access tokens, in seconds."
+  },
+  {
+    "name": "stripe.secretKey",
+    "type": "java.lang.String",
+    "description": "Secret key for Stripe API."
+  },
+  {
+    "name": "websiteUrl",
+    "type": "java.lang.String",
+    "description": "URL of the website."
+  },
+  {
+    "name": "stripe.webhookSecretKey",
+    "type": "java.lang.String",
+    "description": "A description for 'stripe.webhookSecretKey'"
+  }
+]}

@@ -1,0 +1,14 @@
+CREATE TABLE carts (
+    id BINARY(16) NOT NULL PRIMARY KEY DEFAULT (UUID_TO_BIN(UUID())),
+    date_created DATETIME NOT NULL DEFAULT (CURRENT_DATE())
+);
+
+CREATE TABLE cart_items (
+    id BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    cart_id BINARY(16) NOT NULL,
+    product_id BIGINT NOT NULL,
+    quantity INT NOT NULL DEFAULT 1,
+    UNIQUE (cart_id, product_id),
+    FOREIGN KEY (cart_id) REFERENCES carts(id) ON DELETE CASCADE,
+    FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE
+);
