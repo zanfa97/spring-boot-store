@@ -57,7 +57,7 @@ public class SecurityConfig {
                 c.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .csrf(AbstractHttpConfigurer::disable)
             .authorizeHttpRequests(c -> c
-                .requestMatchers("/carts/**").permitAll()
+                .requestMatchers("/swagger-ui/**").permitAll()
                 .requestMatchers("/swagger-ui.html").permitAll()
                 .requestMatchers("/v3/api-docs/**").permitAll()
                 .requestMatchers("/carts/**").permitAll()
