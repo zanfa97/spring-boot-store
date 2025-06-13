@@ -1,19 +1,46 @@
-# The Ultimate Spring Boot Course
+# E-Commerce Store API
 
-This repository contains the starter project for Part 2 of my Spring Boot course:
+A fully-featured RESTful API for an e-commerce platform built with Spring Boot.
 
-[https://codewithmosh.com/p/spring-boot-building-apis](https://codewithmosh.com/p/spring-boot-building-apis)
+## Features
 
-## About this Repository 
+- **Authentication & Authorization**: Secure JWT-based authentication system with role-based access control
+- **Product Management**: CRUD operations for products with category management
+- **Shopping Cart**: Cart management with product quantities
+- **Order Processing**: Complete order management system
+- **User Management**: User registration and profile management
+- **Payment Integration**: Payment processing capabilities through Stripe
+- **Database Migrations**: Flyway migration system for database versioning
 
-This project is based on the final project from Part 1 of the course, but I’ve cleaned it up and removed unnecessary playground code so we can focus on building APIs in Part 2.
+## Technology Stack
 
-You’ll be cloning this repository and coding along with me as we extend the project.
+- **Framework**: Spring Boot
+- **Security**: Spring Security with JWT
+- **Database**: MySQL with Flyway migrations
+- **Documentation**: OpenAPI/Swagger
+- **Build Tool**: Maven
 
-To get started, clone the repository to your local machine:
+## Deployment
 
-```sh
-git clone https://github.com/mosh-hamedani/spring-api-starter
+The API is deployed and accessible at:
+- Production URL: https://store-api-production-5fd7.up.railway.app
+- Swagger Documentation: https://store-api-production-5fd7.up.railway.app/swagger-ui.html
 
-cd spring-api
+The application is hosted on Railway, a modern application platform that handles deployment, scaling, and management of the infrastructure.
+
+## Project Structure
+
 ```
+src/
+ main/
+    java/com/codewithmosh/store/
+       admin/      # Admin functionalities
+       auth/       # Authentication & security
+       carts/      # Shopping cart operations
+       orders/     # Order processing
+       products/   # Product management
+       users/      # User management
+    resources/
+        db/migration/ # Database migrations
+```
+
