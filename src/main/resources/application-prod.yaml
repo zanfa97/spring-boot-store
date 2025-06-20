@@ -3,4 +3,10 @@ spring:
     name: store
   datasource:
     url: ${SPRING_DATASOURCE_URL}
+  springdoc:
+    swagger-ui:
+      disable-swagger-default-url: true
+      path: /swagger-ui.html
+    api-docs:
+      path: /v3/api-docs
 websiteUrl: https://mystore.com
