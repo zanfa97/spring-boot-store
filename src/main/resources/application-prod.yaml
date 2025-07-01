@@ -1,17 +1,4 @@
 spring:
-  application:
-    name: store
   datasource:
     url: ${SPRING_DATASOURCE_URL}
-  springdoc:
-    swagger-ui:
-      disable-swagger-default-url: true
-      path: /swagger-ui.html
-    api-docs:
-      path: /v3/api-docs
-
-stripe:
-  secretKey: ${STRIPE_SECRET_KEY}
-  webhookSecretKey: ${STRIPE_WEBHOOK_SECRET_KEY}
-
-websiteUrl: https://example.com/
+websiteUrl: https://mystore.com
